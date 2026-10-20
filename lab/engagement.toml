@@ -1,0 +1,16 @@
+# One red-team engagement. The harness reads this before any attack is sent.
+id = "RT-2026-001"
+tester = "kiran"
+authorised_by = "Head of security, ticket SEC-1432"   # empty means no attack runs
+expires = "2026-11-30"
+stop_file = "STOP"            # create lab/STOP to halt the engagement at the next model call
+results_dir = "results"       # gitignored; files are readable by the tester only
+
+[scope]
+environments = ["lab"]                        # never "production" in this engagement
+accounts = ["ravi-test", "mallory-test"]      # synthetic clients only
+models = ["gpt-6.1-sol"]                      # the snapshot under test
+
+[budget]
+max_calls = 200
+max_tokens = 400000

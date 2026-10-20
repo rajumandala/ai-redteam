@@ -1,0 +1,11 @@
+# Secrets
+.env
+
+# Transcripts and results from engagements stay on the tester's machine
+lab/results/
+
+# Python
+__pycache__/
+*.py[oc]
+.venv
+*.egg-info
