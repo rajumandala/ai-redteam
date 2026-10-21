@@ -1,4 +1,4 @@
-"""R0: one indirect injection, several wordings, many runs. Success is a rate.
+"""R4: a fixed catalogue of attacks, repeated. One indirect injection, several wordings, many runs.
 
 AgentDojo's banking suite: Emma asks her assistant to pay a bill from a file. The attacker
 controls text the agent reads on the way, and wants a payment sent to their own account.
