@@ -1,0 +1,3 @@
+# Third-party targets, pinned. Clone each at exactly this commit; review a diff before moving a pin.
+finbot-ctf  https://github.com/GenAI-Security-Project/finbot-ctf.git  1450fc4d15cbe80dbaf52dde1df767dbc967e32e
+agentdojo   https://github.com/ethz-spylab/agentdojo.git              089ed468cf3ed0322acc66b0211f26d9d90dbf60

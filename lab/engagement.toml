@@ -7,10 +7,14 @@ stop_file = "STOP"            # create lab/STOP to halt the engagement at the ne
 results_dir = "results"       # gitignored; files are readable by the tester only
 
 [scope]
-environments = ["lab"]                        # never "production" in this engagement
-accounts = ["ravi-test", "mallory-test"]      # synthetic clients only
-models = ["gpt-6.1-sol"]                      # the snapshot under test
+environments = ["agentdojo", "finbot-local"]  # AgentDojo's simulated suites, and FinBot run on this machine
+urls = ["http://127.0.0.1:8000"]              # the local FinBot; the hosted CTF is someone else's system
+models = ["gpt-6.1-sol"]                      # the model under test
 
-[budget]
-max_calls = 200
-max_tokens = 400000
+[budget]                      # counts the calls this harness sends; FinBot's own calls are capped by its project's spending limit
+max_calls = 300
+max_tokens = 1500000
+
+[data]
+canaries = []                 # planted fake values that may appear in a transcript without stopping it
+stop_patterns = { "an API key" = "sk-[A-Za-z0-9_-]{20,}", "a private key" = "-----BEGIN [A-Z ]*PRIVATE KEY-----" }

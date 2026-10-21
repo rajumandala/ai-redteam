@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Lab target and harness for Part R: AI red teaming"
 requires-python = ">=3.12"
 dependencies = [
+    "agentdojo",
     "openai>=1.100",
     "pydantic>=2.11",
     "python-dotenv>=1.1",
@@ -15,3 +16,6 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/redteam"]
+
+[tool.uv.sources]
+agentdojo = { git = "https://github.com/ethz-spylab/agentdojo", rev = "089ed468cf3ed0322acc66b0211f26d9d90dbf60" }
