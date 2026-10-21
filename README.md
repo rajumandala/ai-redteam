@@ -9,7 +9,7 @@ These notes continue the [main course on AI application security](https://github
 
 Both are pinned to exact commits in `targets.lock` and cloned into `targets/`, which is gitignored. Third-party code is not copied into this repo.
 
-Start with [R0. AI Red Teaming](notes/R0.%20AI%20Red%20Teaming.md). R0 and R1 are written and their runs are recorded in each note. R2 to R8 are planned.
+Start with [R0. AI Red Teaming](notes/R0.%20AI%20Red%20Teaming.md). R0, R1 and R2 are written, with each run recorded in its note. R3 to R8 are planned.
 
 ## Running the lab
 
