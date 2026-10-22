@@ -9,7 +9,7 @@ These notes continue the [main course on AI application security](https://github
 
 Both are pinned to exact commits in `targets.lock` and cloned into `targets/`, which is gitignored. Third-party code is not copied into this repo.
 
-Start with [R0. AI Red Teaming](notes/R0.%20AI%20Red%20Teaming.md). R0–R8 are written. R4 records a paid run against AgentDojo. Every other note records a free run that calls no model: a survey of how FinBot grades its challenges, harness checks, FinBot's document delivery in an offline container, graders and regression tests. Live FinBot attacks and the broader AgentDojo experiment in R6 are not run yet, and each note says so.
+Start with [R0. AI Red Teaming](notes/R0.%20AI%20Red%20Teaming.md). R4 records a paid run against AgentDojo. Every other note records a free run that calls no model: a survey of how FinBot grades its challenges, harness checks, FinBot's document delivery in an offline container, graders and regression tests.
 
 ## Course
 
